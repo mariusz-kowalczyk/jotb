@@ -423,79 +423,33 @@ namespace jotb.Repositories
             
             InvoiceModel invoice = new InvoiceModel();
             InvoiceAddressModel address;
-            //MemoryStream strm = new MemoryStream(Encoding.UTF8.GetBytes(str));
-            
-            /*XmlReader xml = XmlReader.Create(strm);
-            xml.Read();
-            xml.MoveToContent(); // start faktura
-            xml.MoveToFirstAttribute();
-            do
+            InvoiceProductModel product;
+
+            XDocument xml = XDocument.Parse(str);
+
+            foreach (XAttribute attr in xml.Root.Attributes())
             {
-                switch (xml.Name)
+                switch (attr.Name.LocalName.ToString())
                 {
-                    case "nr" :
-                        invoice.Number = xml.Value;
+                    case "nr":
+                        invoice.Number = attr.Value.ToString();
                         break;
-                    case "type" :
-                        switch (xml.Value)
+                    case "type":
+                        switch (attr.Value.ToString())
                         {
-                            case "orginal" :
+                            case "orginal":
                                 invoice.Type = (Int16)InvoiceModel.Types.Orginal;
                                 break;
-                            case "kopia" :
+                            case "kopia":
                                 invoice.Type = (Int16)InvoiceModel.Types.Copy;
                                 break;
-                            case "duplikat" :
+                            case "duplikat":
                                 invoice.Type = (Int16)InvoiceModel.Types.Duplicate;
                                 break;
                         }
                         break;
                 }
-            } while (xml.MoveToNextAttribute());
-
-            xml.ReadToFollowing("naglowek");
-            //xml.ReadToFollowing("szczegoly");
-            //xml.ReadToFollowing("datawystawienia");
-            //DateTime date = xml.ReadElementContentAsDateTime(); //datawystawienia
-            //xml.MoveToElement(); //szczegoly
-            //xml.MoveToElement(); //naglowek
-            xml.ReadToFollowing("sprzedawca");
-            //start provider
-            xml.MoveToContent();
-            address = new InvoiceAddressModel();
-            while (xml.Skip())
-            {
-                if (xml.NodeType == XmlNodeType.Element)
-                {
-                    switch (xml.Name)
-                    {
-                        case "nip":
-                            invoice.ProviderNip = xml.ReadElementContentAsString();
-                            break;
-                        case "nazwa":
-                            invoice.ProviderName = xml.ReadElementContentAsString();
-                            break;
-                        case "ulica":
-                            address.Street = xml.ReadElementContentAsString();
-                            break;
-                        case "nrlokalu":
-                            address.Number = xml.ReadElementContentAsString();
-                            break;
-                        case "kodpocztowy":
-                            address.PostCode = xml.ReadElementContentAsString();
-                            break;
-                        case "miasto":
-                            address.City = xml.ReadElementContentAsString();
-                            break;
-                        case "kraj":
-                            address.CountryCode = xml.ReadElementContentAsString();
-                            break;
-                    }
-                }
             }
-            invoice.ProviderAddress = address;
-            */
-            XDocument xml = XDocument.Parse(str);
 
             address = new InvoiceAddressModel();
             foreach (XElement el in xml.Descendants("sprzedawca").Elements())
@@ -526,6 +480,92 @@ namespace jotb.Repositories
                 }
             }
             invoice.ProviderAddress = address;
+
+            address = new InvoiceAddressModel();
+            foreach (XElement el in xml.Descendants("klient").Elements())
+            {
+                switch (el.Name.LocalName.ToString())
+                {
+                    case "nip":
+                        invoice.BuyerNip = el.Value.ToString();
+                        break;
+                    case "nazwa":
+                        invoice.BuyerName = el.Value.ToString();
+                        break;
+                    case "ulica":
+                        address.Street = el.Value.ToString();
+                        break;
+                    case "nrlokalu":
+                        address.Number = el.Value.ToString();
+                        break;
+                    case "kodpocztowy":
+                        address.PostCode = el.Value.ToString();
+                        break;
+                    case "miasto":
+                        address.City = el.Value.ToString();
+                        break;
+                    case "kraj":
+                        address.CountryCode = el.Value.ToString();
+                        break;
+                }
+            }
+            invoice.BuyerAddress = address;
+
+
+            address = new InvoiceAddressModel();
+            foreach (XElement el in xml.Descendants("dostawca").Elements())
+            {
+                switch (el.Name.LocalName.ToString())
+                {
+                    case "nazwa":
+                        invoice.DeliveryName = el.Value.ToString();
+                        break;
+                    case "ulica":
+                        address.Street = el.Value.ToString();
+                        break;
+                    case "nrlokalu":
+                        address.Number = el.Value.ToString();
+                        break;
+                    case "kodpocztowy":
+                        address.PostCode = el.Value.ToString();
+                        break;
+                    case "miasto":
+                        address.City = el.Value.ToString();
+                        break;
+                    case "kraj":
+                        address.CountryCode = el.Value.ToString();
+                        break;
+                }
+            }
+            invoice.DeliveryAddress = address;
+            XElement items = xml.Descendants("pozycje").First();
+            invoice.ProductQuntity = int.Parse(items.Attribute("liczbapozycji").Value.ToString());
+
+            foreach (XElement item in items.Elements())
+            {
+                product = new InvoiceProductModel();
+                foreach (XElement el in item.Elements())
+                {
+                    string value = el.Value.ToString();
+                    switch (el.Name.LocalName.ToString())
+                    {
+                        case "nazwa" :
+                            product.Name = value;
+                            break;
+                        case "ilosc" :
+                            product.Quantity = int.Parse(value);
+                            product.QuantityType = Int16.Parse(el.Attribute("jednostka").Value.ToString());
+                            break;
+                        case "podatekvat" :
+                            product.Tax = Int16.Parse(value);
+                            break;
+                        case "cenanetto" :
+                            product.SumAmountNet = float.Parse(value);
+                            break;
+                    }
+                }
+                invoice.Products.Add(product);
+            }
 
             return invoice;
         }
