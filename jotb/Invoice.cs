@@ -87,5 +87,21 @@ namespace jotb
             InvoiceGenrate IG = new InvoiceGenrate();
             IG.ShowDialog();
         }
+
+        private void xmlButton_Click(object sender, EventArgs e)
+        {
+            if (xmlOpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    string xml = File.ReadAllText(xmlOpenFileDialog.FileName);
+                    InvoiceModel invoice = _invoice.XmlDecode(xml);
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message);
+                }
+            }
+        }
     }
 }

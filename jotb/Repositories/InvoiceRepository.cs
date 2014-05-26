@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace jotb.Repositories
 {
@@ -417,9 +418,92 @@ namespace jotb.Repositories
             return Encoding.UTF8.GetString(strm.ToArray());
         }
 
-        public void XmlDecode(string xml)
+        public InvoiceModel XmlDecode(string str)
         {
+            
+            InvoiceModel invoice = new InvoiceModel();
+            InvoiceAddressModel address;
+            //MemoryStream strm = new MemoryStream(Encoding.UTF8.GetBytes(str));
+            
+            /*XmlReader xml = XmlReader.Create(strm);
+            xml.Read();
+            xml.MoveToContent(); // start faktura
+            xml.MoveToFirstAttribute();
+            do
+            {
+                switch (xml.Name)
+                {
+                    case "nr" :
+                        invoice.Number = xml.Value;
+                        break;
+                    case "type" :
+                        switch (xml.Value)
+                        {
+                            case "orginal" :
+                                invoice.Type = (Int16)InvoiceModel.Types.Orginal;
+                                break;
+                            case "kopia" :
+                                invoice.Type = (Int16)InvoiceModel.Types.Copy;
+                                break;
+                            case "duplikat" :
+                                invoice.Type = (Int16)InvoiceModel.Types.Duplicate;
+                                break;
+                        }
+                        break;
+                }
+            } while (xml.MoveToNextAttribute());
 
+            xml.ReadToFollowing("naglowek");
+            //xml.ReadToFollowing("szczegoly");
+            //xml.ReadToFollowing("datawystawienia");
+            //DateTime date = xml.ReadElementContentAsDateTime(); //datawystawienia
+            //xml.MoveToElement(); //szczegoly
+            //xml.MoveToElement(); //naglowek
+            xml.ReadToFollowing("sprzedawca");
+            //start provider
+            xml.MoveToContent();
+            address = new InvoiceAddressModel();
+            while (xml.Skip())
+            {
+                if (xml.NodeType == XmlNodeType.Element)
+                {
+                    switch (xml.Name)
+                    {
+                        case "nip":
+                            invoice.ProviderNip = xml.ReadElementContentAsString();
+                            break;
+                        case "nazwa":
+                            invoice.ProviderName = xml.ReadElementContentAsString();
+                            break;
+                        case "ulica":
+                            address.Street = xml.ReadElementContentAsString();
+                            break;
+                        case "nrlokalu":
+                            address.Number = xml.ReadElementContentAsString();
+                            break;
+                        case "kodpocztowy":
+                            address.PostCode = xml.ReadElementContentAsString();
+                            break;
+                        case "miasto":
+                            address.City = xml.ReadElementContentAsString();
+                            break;
+                        case "kraj":
+                            address.CountryCode = xml.ReadElementContentAsString();
+                            break;
+                    }
+                }
+            }
+            invoice.ProviderAddress = address;
+            */
+            XDocument xml = XDocument.Parse(str);
+            var nodes1 = from x in xml.Nodes()
+                         select x;
+            foreach (var node in nodes1)
+            {
+
+            }
+
+            return invoice;
         }
 
 

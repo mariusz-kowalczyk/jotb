@@ -38,9 +38,14 @@
             this.comboBoxKreskowe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonGenerujFakture = new System.Windows.Forms.Button();
+            this.xmlPanel = new System.Windows.Forms.Panel();
+            this.xmlLabel = new System.Windows.Forms.Label();
+            this.xmlButton = new System.Windows.Forms.Button();
+            this.xmlOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panelEdi.SuspendLayout();
             this.panelKreskowe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKreskowe)).BeginInit();
+            this.xmlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonEdiFile
@@ -65,7 +70,7 @@
             this.panelEdi.Controls.Add(this.buttonEdiFile);
             this.panelEdi.Location = new System.Drawing.Point(12, 12);
             this.panelEdi.Name = "panelEdi";
-            this.panelEdi.Size = new System.Drawing.Size(485, 67);
+            this.panelEdi.Size = new System.Drawing.Size(230, 67);
             this.panelEdi.TabIndex = 1;
             // 
             // labelEdi
@@ -134,11 +139,45 @@
             this.buttonGenerujFakture.UseVisualStyleBackColor = true;
             this.buttonGenerujFakture.Click += new System.EventHandler(this.buttonGenerujFakture_Click);
             // 
+            // xmlPanel
+            // 
+            this.xmlPanel.Controls.Add(this.xmlButton);
+            this.xmlPanel.Controls.Add(this.xmlLabel);
+            this.xmlPanel.Location = new System.Drawing.Point(248, 13);
+            this.xmlPanel.Name = "xmlPanel";
+            this.xmlPanel.Size = new System.Drawing.Size(249, 66);
+            this.xmlPanel.TabIndex = 5;
+            // 
+            // xmlLabel
+            // 
+            this.xmlLabel.AutoSize = true;
+            this.xmlLabel.Location = new System.Drawing.Point(4, 4);
+            this.xmlLabel.Name = "xmlLabel";
+            this.xmlLabel.Size = new System.Drawing.Size(29, 13);
+            this.xmlLabel.TabIndex = 0;
+            this.xmlLabel.Text = "XML";
+            // 
+            // xmlButton
+            // 
+            this.xmlButton.Location = new System.Drawing.Point(7, 30);
+            this.xmlButton.Name = "xmlButton";
+            this.xmlButton.Size = new System.Drawing.Size(115, 23);
+            this.xmlButton.TabIndex = 1;
+            this.xmlButton.Text = "XML z pliku";
+            this.xmlButton.UseVisualStyleBackColor = true;
+            this.xmlButton.Click += new System.EventHandler(this.xmlButton_Click);
+            // 
+            // xmlOpenFileDialog
+            // 
+            this.xmlOpenFileDialog.FileName = "invoice";
+            this.xmlOpenFileDialog.Filter = "xml files (*.xml)|*.xml";
+            // 
             // Invoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 401);
+            this.Controls.Add(this.xmlPanel);
             this.Controls.Add(this.buttonGenerujFakture);
             this.Controls.Add(this.panelKreskowe);
             this.Controls.Add(this.panelEdi);
@@ -149,6 +188,8 @@
             this.panelKreskowe.ResumeLayout(false);
             this.panelKreskowe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKreskowe)).EndInit();
+            this.xmlPanel.ResumeLayout(false);
+            this.xmlPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -165,6 +206,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxKreskowe;
         private System.Windows.Forms.Button buttonGenerujFakture;
+        private System.Windows.Forms.Panel xmlPanel;
+        private System.Windows.Forms.Label xmlLabel;
+        private System.Windows.Forms.Button xmlButton;
+        private System.Windows.Forms.OpenFileDialog xmlOpenFileDialog;
     }
 }
 

@@ -13,5 +13,6 @@ namespace jotb.Repositories
         string EdiEncode(InvoiceModel invoice);
         InvoiceModel EdiDecode(string strEdi);
         string XmlEncode(InvoiceModel invoice);
+        InvoiceModel XmlDecode(string str);
     }
 }
