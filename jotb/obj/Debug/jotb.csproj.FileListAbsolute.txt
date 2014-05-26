@@ -1,0 +1,77 @@
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\jotb.exe.config
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\jotb.exe
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\jotb.pdb
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.dll
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.xml
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.csprojResolveAssemblyReference.cache
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.Invoice.resources
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.Properties.Resources.resources
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.csproj.GenerateResource.Cache
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.exe
+c:\users\mariusz\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.pdb
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\jotb.exe.config
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.exe
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.pdb
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\jotb.exe
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\jotb.pdb
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\EntityFramework.dll
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\EntityFramework.xml
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.Invoice.resources
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.Migrations.InitialCreate.resources
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.Properties.Resources.resources
+C:\Users\Kamil\Desktop\jotb\jotb\jotb\obj\Debug\jotb.csproj.GenerateResource.Cache
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\jotb.exe.config
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.exe
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.pdb
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\jotb.exe
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\jotb.pdb
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.dll
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.xml
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.csprojResolveAssemblyReference.cache
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.Invoice.resources
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.Migrations.InitialCreate.resources
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.Properties.Resources.resources
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\obj\Debug\jotb.csproj.GenerateResource.Cache
+C:\Users\KAMIKADZE\documents\visual studio 2013\Projects\jotb\jotb\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\jotb.exe.config
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.exe
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.pdb
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\jotb.exe
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\jotb.pdb
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.dll
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.xml
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.csprojResolveAssemblyReference.cache
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.Invoice.resources
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.InvoiceGenrate.resources
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.Properties.Resources.resources
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.csproj.GenerateResource.Cache
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\itextsharp.dll
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\itextsharp.pdfa.dll
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\itextsharp.xtra.dll
+C:\Users\kamil_000\Documents\Visual Studio 2013\Projects\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\itextsharp.xml
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\jotb.exe.config
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.exe
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.pdb
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\jotb.exe
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\jotb.pdb
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.dll
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.xml
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\bin\Debug\itextsharp.xml
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.Invoice.resources
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.InvoiceGenrate.resources
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.Properties.Resources.resources
+C:\Users\Kamil\Desktop\jotb - 15.04.2014 -generowaniefaktury\jotb - 8.04.2014 - dziala QR\jotb\jotb\obj\Debug\jotb.csproj.GenerateResource.Cache
+C:\Users\Mariusz\Documents\Visual Studio 2013\Projects\jotb\jotb\bin\Debug\itextsharp.xml
+C:\Users\Mariusz\Documents\Visual Studio 2013\Projects\jotb\jotb\obj\Debug\jotb.InvoiceGenrate.resources
