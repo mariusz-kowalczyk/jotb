@@ -112,6 +112,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.generateXML = new System.Windows.Forms.Button();
             this.xmlSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.ediSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jotbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource1)).BeginInit();
@@ -872,6 +873,12 @@
             this.xmlSaveFileDialog.FileName = "invoice";
             this.xmlSaveFileDialog.Filter = "xml files (*.xml)|*.xml";
             // 
+            // ediSaveFileDialog
+            // 
+            this.ediSaveFileDialog.DefaultExt = "edi";
+            this.ediSaveFileDialog.FileName = "invoice";
+            this.ediSaveFileDialog.Filter = "edi files (*.edi)|*.edi";
+            // 
             // InvoiceGenrate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -990,5 +997,6 @@
         private System.Windows.Forms.Label labelNazwaFirmy;
         private System.Windows.Forms.Button generateXML;
         private System.Windows.Forms.SaveFileDialog xmlSaveFileDialog;
+        private System.Windows.Forms.SaveFileDialog ediSaveFileDialog;
     }
 }

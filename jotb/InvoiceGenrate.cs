@@ -194,10 +194,19 @@ namespace jotb
             InvoiceModel invoice = this.getFromForm();
             if (invoice != null)
             {
-                _invoice.Add(invoice);
-                String edi = _invoice.EdiEncode(invoice);
+               
             }
-            //File.WriteAllText(@"C:\Users\kamil_000\Desktop\JOBT\Faktura Nr " + Convert.ToString(tbNumerFaktury.Text) + ".edi", edi);
+            if (invoice != null)
+            {
+                string edi = _invoice.EdiEncode(invoice);
+                if (ediSaveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //_invoice.Add(invoice);
+
+                    File.WriteAllText(ediSaveFileDialog.FileName, edi);
+                    MessageBox.Show("Zapisano  do pliku edi.");
+                }
+            }
 
         }
 
@@ -261,6 +270,7 @@ namespace jotb
                 string xml = _invoice.XmlEncode(invoice);
                 if (xmlSaveFileDialog.ShowDialog() == DialogResult.OK)
                 {
+                    //_invoice.Add(invoice);
                     File.WriteAllText(xmlSaveFileDialog.FileName, xml);
                     MessageBox.Show("Zapisano  do pliku xml.");
                 }
