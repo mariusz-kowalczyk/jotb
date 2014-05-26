@@ -496,12 +496,36 @@ namespace jotb.Repositories
             invoice.ProviderAddress = address;
             */
             XDocument xml = XDocument.Parse(str);
-            var nodes1 = from x in xml.Nodes()
-                         select x;
-            foreach (var node in nodes1)
-            {
 
+            address = new InvoiceAddressModel();
+            foreach (XElement el in xml.Descendants("sprzedawca").Elements())
+            {
+                switch (el.Name.LocalName.ToString())
+                {
+                    case "nip":
+                        invoice.ProviderNip = el.Value.ToString();
+                        break;
+                    case "nazwa":
+                        invoice.ProviderName = el.Value.ToString();
+                        break;
+                    case "ulica":
+                        address.Street = el.Value.ToString();
+                        break;
+                    case "nrlokalu":
+                        address.Number = el.Value.ToString();
+                        break;
+                    case "kodpocztowy":
+                        address.PostCode = el.Value.ToString();
+                        break;
+                    case "miasto":
+                        address.City = el.Value.ToString();
+                        break;
+                    case "kraj":
+                        address.CountryCode = el.Value.ToString();
+                        break;
+                }
             }
+            invoice.ProviderAddress = address;
 
             return invoice;
         }
