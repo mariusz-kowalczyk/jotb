@@ -90,6 +90,16 @@ namespace jotb
                 {
                     string xml = File.ReadAllText(xmlOpenFileDialog.FileName);
                     InvoiceModel invoice = _invoice.XmlDecode(xml);
+                    try
+                    {
+                        _invoice.Add(invoice);
+                        MessageBox.Show("Zapisano z XML'a do bazy");
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
+                    
                 }
                 catch (Exception err)
                 {

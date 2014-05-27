@@ -201,7 +201,7 @@ namespace jotb
                 string edi = _invoice.EdiEncode(invoice);
                 if (ediSaveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //_invoice.Add(invoice);
+                    _invoice.Add(invoice);
 
                     File.WriteAllText(ediSaveFileDialog.FileName, edi);
                     MessageBox.Show("Zapisano  do pliku edi.");

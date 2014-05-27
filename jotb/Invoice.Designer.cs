@@ -95,6 +95,7 @@
             // 
             // xmlPanel
             // 
+            this.xmlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.xmlPanel.Controls.Add(this.xmlButton);
             this.xmlPanel.Controls.Add(this.xmlLabel);
             this.xmlPanel.Location = new System.Drawing.Point(248, 13);

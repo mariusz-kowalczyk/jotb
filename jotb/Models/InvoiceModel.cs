@@ -27,6 +27,9 @@ namespace jotb.Models
         [Required]
         public DateTime SaleDate { get; set; }
 
+        [Required]        
+        public DateTime Date { get; set; }
+
         [Required]
         [MaxLength(300)]
         [MinLength(3)]
@@ -79,6 +82,7 @@ namespace jotb.Models
         public InvoiceModel()
         {
             this.Products = new HashSet<InvoiceProductModel>();
+            this.Date = DateTime.Now;
         }
     }
 }
