@@ -103,9 +103,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>JotbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Library\Barcode.cs" />
     <Compile Include="Library\Fun.cs" />
     <Compile Include="Library\Edi.cs" />
     <Compile Include="Library\Helper\Dict.cs" />
+    <Compile Include="Library\Print.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\InvoiceAddressModel.cs" />
     <Compile Include="Models\InvoiceModel.cs" />

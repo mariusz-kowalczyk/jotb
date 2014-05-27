@@ -126,7 +126,7 @@ namespace jotb
                 prod.Type = Convert.ToString(dataGridView1.Rows[i].Cells[2].Value);
                 prod.QuantityType = 47;
                 prod.Quantity = Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
-                prod.SumAmountType = "66 ???";                                                                      ////o co chodzi?
+                prod.SumAmountType = "66";                                                                      ////o co chodzi?
                 prod.SumAmountNet = Convert.ToSingle(dataGridView1.Rows[i].Cells[4].Value);
                 prod.UnitPriceNet = Convert.ToInt32(dataGridView1.Rows[i].Cells[1].Value);
                 prod.Tax = Convert.ToInt16(Tax);
@@ -270,7 +270,7 @@ namespace jotb
                 string xml = _invoice.XmlEncode(invoice);
                 if (xmlSaveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //_invoice.Add(invoice);
+                    _invoice.Add(invoice);
                     File.WriteAllText(xmlSaveFileDialog.FileName, xml);
                     MessageBox.Show("Zapisano  do pliku xml.");
                 }

@@ -32,20 +32,21 @@
             this.openFileDialogEdi = new System.Windows.Forms.OpenFileDialog();
             this.panelEdi = new System.Windows.Forms.Panel();
             this.labelEdi = new System.Windows.Forms.Label();
+            this.buttonGenerujFakture = new System.Windows.Forms.Button();
+            this.xmlPanel = new System.Windows.Forms.Panel();
+            this.xmlButton = new System.Windows.Forms.Button();
+            this.xmlLabel = new System.Windows.Forms.Label();
+            this.xmlOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panelKreskowe = new System.Windows.Forms.Panel();
+            this.textBoxBarcode = new System.Windows.Forms.TextBox();
             this.pictureBoxKreskowe = new System.Windows.Forms.PictureBox();
             this.buttonKreskowe = new System.Windows.Forms.Button();
             this.comboBoxKreskowe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonGenerujFakture = new System.Windows.Forms.Button();
-            this.xmlPanel = new System.Windows.Forms.Panel();
-            this.xmlLabel = new System.Windows.Forms.Label();
-            this.xmlButton = new System.Windows.Forms.Button();
-            this.xmlOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.panelEdi.SuspendLayout();
+            this.xmlPanel.SuspendLayout();
             this.panelKreskowe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKreskowe)).BeginInit();
-            this.xmlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonEdiFile
@@ -82,17 +83,68 @@
             this.labelEdi.TabIndex = 0;
             this.labelEdi.Text = "EDI";
             // 
+            // buttonGenerujFakture
+            // 
+            this.buttonGenerujFakture.Location = new System.Drawing.Point(22, 248);
+            this.buttonGenerujFakture.Name = "buttonGenerujFakture";
+            this.buttonGenerujFakture.Size = new System.Drawing.Size(121, 23);
+            this.buttonGenerujFakture.TabIndex = 4;
+            this.buttonGenerujFakture.Text = "Generuj fakture";
+            this.buttonGenerujFakture.UseVisualStyleBackColor = true;
+            this.buttonGenerujFakture.Click += new System.EventHandler(this.buttonGenerujFakture_Click);
+            // 
+            // xmlPanel
+            // 
+            this.xmlPanel.Controls.Add(this.xmlButton);
+            this.xmlPanel.Controls.Add(this.xmlLabel);
+            this.xmlPanel.Location = new System.Drawing.Point(248, 13);
+            this.xmlPanel.Name = "xmlPanel";
+            this.xmlPanel.Size = new System.Drawing.Size(249, 66);
+            this.xmlPanel.TabIndex = 5;
+            // 
+            // xmlButton
+            // 
+            this.xmlButton.Location = new System.Drawing.Point(7, 30);
+            this.xmlButton.Name = "xmlButton";
+            this.xmlButton.Size = new System.Drawing.Size(115, 23);
+            this.xmlButton.TabIndex = 1;
+            this.xmlButton.Text = "XML z pliku";
+            this.xmlButton.UseVisualStyleBackColor = true;
+            this.xmlButton.Click += new System.EventHandler(this.xmlButton_Click);
+            // 
+            // xmlLabel
+            // 
+            this.xmlLabel.AutoSize = true;
+            this.xmlLabel.Location = new System.Drawing.Point(4, 4);
+            this.xmlLabel.Name = "xmlLabel";
+            this.xmlLabel.Size = new System.Drawing.Size(29, 13);
+            this.xmlLabel.TabIndex = 0;
+            this.xmlLabel.Text = "XML";
+            // 
+            // xmlOpenFileDialog
+            // 
+            this.xmlOpenFileDialog.FileName = "invoice";
+            this.xmlOpenFileDialog.Filter = "xml files (*.xml)|*.xml";
+            // 
             // panelKreskowe
             // 
             this.panelKreskowe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelKreskowe.Controls.Add(this.textBoxBarcode);
             this.panelKreskowe.Controls.Add(this.pictureBoxKreskowe);
             this.panelKreskowe.Controls.Add(this.buttonKreskowe);
             this.panelKreskowe.Controls.Add(this.comboBoxKreskowe);
             this.panelKreskowe.Controls.Add(this.label1);
-            this.panelKreskowe.Location = new System.Drawing.Point(12, 86);
+            this.panelKreskowe.Location = new System.Drawing.Point(12, 104);
             this.panelKreskowe.Name = "panelKreskowe";
             this.panelKreskowe.Size = new System.Drawing.Size(485, 138);
-            this.panelKreskowe.TabIndex = 2;
+            this.panelKreskowe.TabIndex = 6;
+            // 
+            // textBoxBarcode
+            // 
+            this.textBoxBarcode.Location = new System.Drawing.Point(9, 61);
+            this.textBoxBarcode.Name = "textBoxBarcode";
+            this.textBoxBarcode.Size = new System.Drawing.Size(121, 20);
+            this.textBoxBarcode.TabIndex = 4;
             // 
             // pictureBoxKreskowe
             // 
@@ -104,7 +156,7 @@
             // 
             // buttonKreskowe
             // 
-            this.buttonKreskowe.Location = new System.Drawing.Point(9, 72);
+            this.buttonKreskowe.Location = new System.Drawing.Point(9, 97);
             this.buttonKreskowe.Name = "buttonKreskowe";
             this.buttonKreskowe.Size = new System.Drawing.Size(121, 23);
             this.buttonKreskowe.TabIndex = 2;
@@ -129,67 +181,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Kody kreskowe";
             // 
-            // buttonGenerujFakture
-            // 
-            this.buttonGenerujFakture.Location = new System.Drawing.Point(22, 248);
-            this.buttonGenerujFakture.Name = "buttonGenerujFakture";
-            this.buttonGenerujFakture.Size = new System.Drawing.Size(121, 23);
-            this.buttonGenerujFakture.TabIndex = 4;
-            this.buttonGenerujFakture.Text = "Generuj fakture";
-            this.buttonGenerujFakture.UseVisualStyleBackColor = true;
-            this.buttonGenerujFakture.Click += new System.EventHandler(this.buttonGenerujFakture_Click);
-            // 
-            // xmlPanel
-            // 
-            this.xmlPanel.Controls.Add(this.xmlButton);
-            this.xmlPanel.Controls.Add(this.xmlLabel);
-            this.xmlPanel.Location = new System.Drawing.Point(248, 13);
-            this.xmlPanel.Name = "xmlPanel";
-            this.xmlPanel.Size = new System.Drawing.Size(249, 66);
-            this.xmlPanel.TabIndex = 5;
-            // 
-            // xmlLabel
-            // 
-            this.xmlLabel.AutoSize = true;
-            this.xmlLabel.Location = new System.Drawing.Point(4, 4);
-            this.xmlLabel.Name = "xmlLabel";
-            this.xmlLabel.Size = new System.Drawing.Size(29, 13);
-            this.xmlLabel.TabIndex = 0;
-            this.xmlLabel.Text = "XML";
-            // 
-            // xmlButton
-            // 
-            this.xmlButton.Location = new System.Drawing.Point(7, 30);
-            this.xmlButton.Name = "xmlButton";
-            this.xmlButton.Size = new System.Drawing.Size(115, 23);
-            this.xmlButton.TabIndex = 1;
-            this.xmlButton.Text = "XML z pliku";
-            this.xmlButton.UseVisualStyleBackColor = true;
-            this.xmlButton.Click += new System.EventHandler(this.xmlButton_Click);
-            // 
-            // xmlOpenFileDialog
-            // 
-            this.xmlOpenFileDialog.FileName = "invoice";
-            this.xmlOpenFileDialog.Filter = "xml files (*.xml)|*.xml";
-            // 
             // Invoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 401);
+            this.Controls.Add(this.panelKreskowe);
             this.Controls.Add(this.xmlPanel);
             this.Controls.Add(this.buttonGenerujFakture);
-            this.Controls.Add(this.panelKreskowe);
             this.Controls.Add(this.panelEdi);
             this.Name = "Invoice";
             this.Text = "Invoice";
             this.panelEdi.ResumeLayout(false);
             this.panelEdi.PerformLayout();
+            this.xmlPanel.ResumeLayout(false);
+            this.xmlPanel.PerformLayout();
             this.panelKreskowe.ResumeLayout(false);
             this.panelKreskowe.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKreskowe)).EndInit();
-            this.xmlPanel.ResumeLayout(false);
-            this.xmlPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -200,16 +209,17 @@
         private System.Windows.Forms.OpenFileDialog openFileDialogEdi;
         private System.Windows.Forms.Panel panelEdi;
         private System.Windows.Forms.Label labelEdi;
-        private System.Windows.Forms.Panel panelKreskowe;
-        private System.Windows.Forms.Button buttonKreskowe;
-        private System.Windows.Forms.ComboBox comboBoxKreskowe;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBoxKreskowe;
         private System.Windows.Forms.Button buttonGenerujFakture;
         private System.Windows.Forms.Panel xmlPanel;
         private System.Windows.Forms.Label xmlLabel;
         private System.Windows.Forms.Button xmlButton;
         private System.Windows.Forms.OpenFileDialog xmlOpenFileDialog;
+        private System.Windows.Forms.Panel panelKreskowe;
+        private System.Windows.Forms.TextBox textBoxBarcode;
+        private System.Windows.Forms.PictureBox pictureBoxKreskowe;
+        private System.Windows.Forms.Button buttonKreskowe;
+        private System.Windows.Forms.ComboBox comboBoxKreskowe;
+        private System.Windows.Forms.Label label1;
     }
 }
 
