@@ -53,7 +53,7 @@ namespace jotb.Repositories
             //numer faktury
             segments.Add("BGM+380+" + invoice.Number + "+" + invoice.Type);
             //data wystawienia faktury
-            segments.Add("DTM+137:"+invoice.SaleDate.ToString("yyyyMMdd")+":102");
+            segments.Add("DTM+356:"+invoice.SaleDate.ToString("yyyyMMdd")+":102");
             //dane dostawcy
             segments.Add("NAD+SU+4012345500004::9++" +
                 Edi.Filter(invoice.ProviderName) + ":::::+" +
@@ -186,7 +186,7 @@ namespace jotb.Repositories
                         }
                         switch (parameters[0])
                         {
-                            case "137" :
+                            case "356" :
                                 invoice.SaleDate = date;
                                 break;
                             case "13" :
