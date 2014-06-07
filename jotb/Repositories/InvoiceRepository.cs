@@ -154,6 +154,7 @@ namespace jotb.Repositories
             {
                 if (String.IsNullOrEmpty(segments[i]))
                     continue;
+                segments[i] = segments[i].Trim();
                 arguments = Edi.ParseToArguments(segments[i]);
 
                 switch (arguments[0])
